@@ -8,6 +8,9 @@ class HelloWorld(Resource):
     def get(self):
         return {'message': 'Hello World'}
 
+    def post(self):
+        return {'message': 'Goodbye World'}
+
 api.add_resource(HelloWorld, '/')
 
 if __name__ == '__main__':
